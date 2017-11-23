@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>  
+	 <script src="alumnos.js"></script>  
+
+</head>
+<body>
+
+	<form action="get_alumnos.php" method="post">
+		
+	<label>Buscar: <input name='buscar' type='text' /></label>
+	<input type="button" href="javascript:;" onclick="realizaProceso();return false;" value="Calcula"/>
+	</form>
+
+	<div>
+		<table id="tabla_usuarios">
+			<thead>
+				<tr>
+					<th>NOMBRE</th>
+					<th>DNI</th>
+				</tr>
+				<tbody></tbody>
+			</thead>
+		</table>
+	</div>
+
+</body>
+</html>
