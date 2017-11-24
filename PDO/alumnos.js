@@ -2,23 +2,16 @@
 function realizaProceso(){
 
 	$.ajax({
-		
+
 		type: "POST",
     	dataType: "json",
     	url: "get_alumnos.php",
 		})
-
  		.done(function(respuesta) {
-
      	 	console.log(respuesta);
-     	 	//var productos = JSON.parse(respuesta);
-     	 	//$("#tabla_usuarios").html(respuesta);
-
      	 	muestraDatos(respuesta);
  		})
-
- 		.fail(function( jqXHR, textStatus, errorThrown ) {
-    		
+ 		.fail(function( jqXHR, textStatus, errorThrown ) {	
 		});
     }
 
